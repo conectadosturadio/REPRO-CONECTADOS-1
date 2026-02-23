@@ -1,72 +1,44 @@
-<!doctype html>
-<html lang="es">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsversion='3' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/schemas/ブロガー/2010' xmlns:data='http://www.google.com/schemas/ブロガー/2010' xmlns:expr='http://www.google.com/schemas/ブロガー/2010'>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Conectados Tu Radio</title>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  <title><data:blog.pageTitle/></title>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap');
-
-*,*::before,*::after{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
-html,body{
-height:100%;
-width:100%;
-background:#000; /* ← FONDO LIMPIO NEGRO */
-display:flex;
-align-items:center;
-justify-content:center;
-font-family:'Inter',sans-serif;
-overflow:hidden;
-}
-
-/* 🔥 ELIMINADO TODO LO QUE ERA bg-particles */
-
-/* ===== TU PLAYER ===== */
-
-.player-wrap{
-position:relative;
-z-index:10;
-width:min(320px,90vw);
-background:rgba(10,10,26,0.55);
-border:1px solid rgba(180,100,255,0.25);
-border-radius:1.5rem;
-backdrop-filter:blur(28px) saturate(180%);
--webkit-backdrop-filter:blur(28px) saturate(180%);
-box-shadow:
-0 0 0 1px rgba(100,200,255,0.08),
-0 0 40px rgba(180,100,255,0.2),
-0 0 80px rgba(0,200,255,0.1),
-inset 0 0 40px rgba(0,0,0,0.4),
-inset 0 1px 0 rgba(255,255,255,0.07);
-overflow:hidden;
-}
-
-/* TODO lo demás de tu CSS sigue igual */
-/* No se toca waves */
-/* No se toca EQ */
-/* No se toca animaciones internas */
-
-</style>
+  <b:skin><![CDATA[
+  /* --- RESET BÁSICO --- */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f4f4f4;
+    color: #333;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  /* Estilos para que no se rompan fuentes */
+  * { box-sizing: border-box; }
+  ]]></b:skin>
 </head>
-
 <body>
 
-<div class="player-wrap">
-<!-- AQUÍ DEJAS TODO TU CONTENIDO ORIGINAL
-     DESDE header HASTA footer
-     SIN el div bg-particles -->
-</div>
+  <div class='container'>
+    <!-- Sección para agregar GADGETS -->
+    <b:section id='header' showaddelement='yes'>
+       <!-- Aquí puedes arrastrar gadgets desde Diseño -->
+    </b:section>
 
-<script>
-/* PEGA AQUÍ TODO TU JS ORIGINAL
-   PERO SIN el bloque de BG PARTICLES */
-</script>
+    <b:section id='main' showaddelement='yes'>
+       <!-- Espacio para el contenido principal -->
+    </b:section>
+
+    <b:section id='footer' showaddelement='yes'>
+       <!-- Espacio para pie de página -->
+    </b:section>
+  </div>
 
 </body>
 </html>
